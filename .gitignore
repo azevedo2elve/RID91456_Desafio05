@@ -1,0 +1,9 @@
+*/node_modules
+
+*.log
+.DS_Store
+npm-debug.log*
+
+# Variáveis de ambiente
+.env
+.env.local
