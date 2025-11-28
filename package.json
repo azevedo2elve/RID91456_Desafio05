@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Sistema de Biblioteca - DNC",
   "scripts": {
-    "dev": "npm run dev:fronted & npm run dev:backend",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
     "dev:backend": "cd backend-dnc-biblioteca && npm run dev",
     "dev:frontend": "cd frontend-dnc-biblioteca && npm run dev",
     "install:all": "npm install && cd backend-dnc-biblioteca && npm install && cd ../frontend-dnc-biblioteca && npm install"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
 }
