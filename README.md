@@ -68,6 +68,11 @@ Este comando iniciará:
 npm run dev:backend
 ```
 
+**Rodar o backend em produção com NodeJS**
+```bash
+npm run start
+```
+
 **Apenas Frontend:**
 ```bash
 npm run dev:frontend
